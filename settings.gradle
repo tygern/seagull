@@ -1,0 +1,4 @@
+rootProject.name="seagull"
+
+include "applications/seagull-application"
+include "components/birdfood-api"

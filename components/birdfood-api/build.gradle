@@ -1,0 +1,5 @@
+dependencies {
+    compile "org.springframework:spring-webmvc:$springVersion"
+
+    testCompile "org.springframework:spring-test:$springVersion"
+}
