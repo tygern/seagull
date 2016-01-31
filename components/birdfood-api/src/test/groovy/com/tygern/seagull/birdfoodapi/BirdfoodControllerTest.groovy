@@ -1,16 +1,26 @@
 package com.tygern.seagull.birdfoodapi
 
+import org.springframework.test.web.servlet.MockMvc
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
+import static org.springframework.http.HttpStatus.OK
 import spock.lang.Specification
 
 class BirdfoodControllerTest extends Specification {
-    def "let's try this!"() {
-        given:
-        def number = 2
+    BirdfoodController birdfoodController
+    MockMvc mockMvc
 
+    def setup() {
+        birdfoodController = new BirdfoodController()
+        mockMvc = standaloneSetup(birdfoodController).build()
+    }
+
+    def "birdfood returns seed"() {
         when:
-        number += 1
+        def response = mockMvc.perform(get('/birdfood')).andReturn().response
 
         then:
-        number == 3
+        response.status == OK.value()
+        response.contentAsString == 'seed'
     }
 }
