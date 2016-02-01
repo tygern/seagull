@@ -1,12 +1,23 @@
 package com.tygern.seagull.birdfoodapi;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class BirdfoodController {
+
+    private SeedProvider seedProvider;
+
+    @Autowired
+    public BirdfoodController(SeedProvider seedProvider) {
+        this.seedProvider = seedProvider;
+    }
+
     @RequestMapping("/birdfood")
-    public String birdfood() {
-        return "seed";
+    public List<Seed> birdfood() {
+        return seedProvider.getList();
     }
 }

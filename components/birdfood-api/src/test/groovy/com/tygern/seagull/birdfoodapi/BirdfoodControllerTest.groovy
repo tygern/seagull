@@ -8,10 +8,12 @@ import spock.lang.Specification
 
 class BirdfoodControllerTest extends Specification {
     BirdfoodController birdfoodController
+    SeedProvider seedProvider
     MockMvc mockMvc
 
     def setup() {
-        birdfoodController = new BirdfoodController()
+        seedProvider = Mock(SeedProvider.class)
+        birdfoodController = new BirdfoodController(seedProvider)
         mockMvc = standaloneSetup(birdfoodController).build()
     }
 
@@ -20,7 +22,9 @@ class BirdfoodControllerTest extends Specification {
         def response = mockMvc.perform(get('/birdfood')).andReturn().response
 
         then:
+        1 * seedProvider.getList() >> [new Seed(type: 'sunflower', quantity: 8L)]
+
         response.status == OK.value()
-        response.contentAsString == 'seed'
+        response.contentAsString == '[{"quantity":8,"type":"sunflower"}]'
     }
 }
