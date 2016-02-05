@@ -8,7 +8,7 @@ It's for the birds.
 ## About
 
 Seagull consists of two applications that make seed available from the `/birdfood` endpoint:
-- **seagull-application** fetches seed over HTTP from [Sandbox](https://getsandbox.com/).
+- **seagull-application** fetches seed from [Sandbox](https://getsandbox.com/) over HTTP.
 - **mock-seagull-application** provides mock seed data. 
 
 ## Dependencies
