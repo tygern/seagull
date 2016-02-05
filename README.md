@@ -1,4 +1,5 @@
 # Seagull
+[![Build Status](https://travis-ci.org/tygern/seagull.svg?branch=master)](https://travis-ci.org/tygern/seagull)
 
 It's for the birds.
 
@@ -7,7 +8,7 @@ It's for the birds.
 ## About
 
 Seagull consists of two applications that make seed available from the `/birdfood` endpoint:
-- **seagull-application** fetches seed over HTTP. 
+- **seagull-application** fetches seed over HTTP from [Sandbox](https://getsandbox.com/).
 - **mock-seagull-application** provides mock seed data. 
 
 ## Dependencies
