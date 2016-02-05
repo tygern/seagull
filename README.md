@@ -1,9 +1,10 @@
 # Seagull
-[![Build Status](https://travis-ci.org/tygern/seagull.svg?branch=master)](https://travis-ci.org/tygern/seagull)
+
+![seagull](images/seagull.jpg)
 
 It's for the birds.
 
-![seagull](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Larus_pacificus_Bruny_Island.jpg/164px-Larus_pacificus_Bruny_Island.jpg)
+[![Build Status](https://travis-ci.org/tygern/seagull.svg?branch=master)](https://travis-ci.org/tygern/seagull)
 
 ## About
 
