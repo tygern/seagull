@@ -1,8 +1,16 @@
 package com.tygern.seagull.birdfoodapi;
 
 public class Seed {
-    long quantity;
-    String type;
+    private long quantity;
+    private String type;
+
+    public Seed() {
+    }
+
+    public Seed(long quantity, String type) {
+        this.quantity = quantity;
+        this.type = type;
+    }
 
     public long getQuantity() {
         return quantity;
@@ -27,6 +35,7 @@ public class Seed {
 
         Seed seed = (Seed) o;
 
+        //noinspection SimplifiableIfStatement
         if (quantity != seed.quantity) return false;
         return !(type != null ? !type.equals(seed.type) : seed.type != null);
 

@@ -1,5 +1,8 @@
 rootProject.name="seagull"
 
+include "applications/mock-seagull-application"
 include "applications/seagull-application"
+
 include "components/birdfood-api"
 include "components/static-seed-store"
+include "components/http-seed-store"

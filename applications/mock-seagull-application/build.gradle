@@ -1,13 +1,10 @@
 //noinspection GroovyAssignabilityCheck
 dependencies {
     compile project(":components/birdfood-api")
-    compile project(":components/http-seed-store")
+    compile project(":components/static-seed-store")
 
     compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
-
     testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
-    testCompile 'com.github.tomakehurst:wiremock:2.0.8-beta'
-    testCompile 'com.github.tomjankes:wiremock-groovy:0.2.0'
 }
 
 apply plugin: "spring-boot"

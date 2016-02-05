@@ -1,4 +1,4 @@
-package com.tygern.seagull
+package com.tygern.seagull.mockapplication
 
 import groovy.json.JsonSlurper
 import org.springframework.beans.factory.annotation.Value
@@ -6,9 +6,9 @@ import org.springframework.boot.test.SpringApplicationConfiguration
 import org.springframework.boot.test.WebIntegrationTest
 import spock.lang.Specification
 
-@SpringApplicationConfiguration(classes = SeagullApplication.class)
+@SpringApplicationConfiguration(classes = MockSeagullApplication.class)
 @WebIntegrationTest(randomPort = true)
-class SeagullApplicationTest extends Specification {
+class MockSeagullApplicationTest extends Specification {
 
     @Value('${local.server.port}')
     int port;
