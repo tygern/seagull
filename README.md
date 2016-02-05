@@ -1,7 +1,8 @@
 # Seagull
 
-![seagull](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Larus_pacificus_Bruny_Island.jpg/164px-Larus_pacificus_Bruny_Island.jpg)
 It's for the birds.
+
+![seagull](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Larus_pacificus_Bruny_Island.jpg/164px-Larus_pacificus_Bruny_Island.jpg)
 
 ## About
 
